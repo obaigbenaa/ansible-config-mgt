@@ -1,3 +1,3 @@
-# starting ansible
+starting ansible
 
 Save artifacts
