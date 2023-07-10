@@ -1,6 +1,10 @@
 ---
 - hosts: all
+<<<<<<< HEAD
 - import_playbook: ../static-assignments/common.yml
 
 - hosts: uat-webservers
 - import_playbook: ../static-assignments/uat-webservers.yml
+=======
+- import_playbook: ../static-assignments/common-del.yml
+>>>>>>> 7ea8926494e9e8fa93d170ae339a2f33346cb0be
