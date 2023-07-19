@@ -5,12 +5,12 @@
     - include_tasks: ../dynamic-assignments/env-vars.yml
       tags:
         - always
-    - import_playbook: ../static-assignments/common.yml
+    - import_tasks: ../static-assignments/common.yml
 
 - hosts: uat-webservers
   name: Import uat-webservers playbook
   tasks:
-    - import_playbook: ../static-assignments/uat-webservers.yml
+    - import_tasks: ../static-assignments/uat-webservers.yml
 
 - hosts: uat-webservers
   name: Include env-vars tasks
@@ -19,12 +19,13 @@
       tags:
         - always
 
-- name: import database file
-  import_playbook: ../static-assignments/db.yml
+- hosts: all
+  name: Import database file
+  tasks:
+    - import_tasks: ../static-assignments/db.yml
 
 - hosts: lb
   name: Loadbalancers assignment
-  import_playbook: ../static-assignments/loadbalancers.yml
+  tasks:
+    - import_tasks: ../static-assignments/loadbalancers.yml
   when: load_balancer_is_required
-
-
