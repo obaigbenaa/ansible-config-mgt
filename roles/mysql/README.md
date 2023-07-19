@@ -74,7 +74,7 @@ A list of files that should override the default global my.cnf. Each item in the
 mysql_databases: []
 ```
 
-The MySQL databases to create. A database has the values `name`, `encoding` (defaults to `utf8`), `collation` (defaults to `utf8_general_ci`) and `replicate` (defaults to `1`, only used if replication is configured). The formats of these are the same as in the `mysql_db` module.
+The MySQL databases to create. A database has the values `name` tooling, `encoding` (defaults to `utf8`), `collation` (defaults to `utf8_general_ci`) and `replicate` (defaults to `1`, only used if replication is configured). The formats of these are the same as in the `mysql_db` module.
 
 You can also delete a database (or ensure it's not on the server) by setting `state` to `absent` (defaults to `present`).
 
@@ -84,11 +84,11 @@ mysql_users: []
 
 The MySQL users and their privileges. A user has the values:
 
-  - `name` user
-  - `host` [uat-webservers]
-  - `password` P@ssword1
+  - `name` webaccess
+  - `host` 0.0.0.0
+  - `password` password
   - `encrypted` yes
-  - `priv` MySQL.*:ALL
+  - `priv` '*.*:ALL,GRANT'
   - `append_privs` no
   - `state`  present
 
