@@ -10,7 +10,6 @@
         name: wireshark
         state: latest
 
----
 - name: Update LB server
   hosts: lb
   remote_user: ubuntu
