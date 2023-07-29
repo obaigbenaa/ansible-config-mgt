@@ -23,7 +23,7 @@
   become: true
   command: cp -r /var/www/html/html/. /var/www/html
 
-- name: Start service httpd, if not started
+- name: Start service apache, if not started
   become: true
   ansible.builtin.service:
     name: httpd
