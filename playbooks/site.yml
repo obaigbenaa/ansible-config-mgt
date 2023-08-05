@@ -19,10 +19,10 @@
 #       tags:
 #         - always
 
-# - hosts: all
-#   name: Import database file
-#   tasks:
-#     - import_tasks: ../static-assignments/db.yml
+- hosts: db
+  name: Import database file
+  tasks:
+    - import_tasks: ../static-assignments/db.yml
 
 # - hosts: lb
 #   name: Loadbalancers assignment
