@@ -20,7 +20,7 @@
 #         - always
 
 - hosts: db
-  name: Import database file
+  name: database assignment
   import_playbook: ../static-assignments/db.yml
 
 # - hosts: lb
