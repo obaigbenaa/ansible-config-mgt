@@ -19,8 +19,8 @@
 #       tags:
 #         - always
 
-- hosts: db
-  name: Import database file
+- name: Import database file
+  hosts: db
   tasks:
     - import_tasks: ../static-assignments/db.yml
 
