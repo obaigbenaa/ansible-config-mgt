@@ -19,8 +19,8 @@
 #       tags:
 #         - always
 
-- name: Import database file
-  hosts: db
+- hosts: db
+  name: Import database file
   import_playbook: ../static-assignments/db.yml
 
 # - hosts: lb
