@@ -21,8 +21,7 @@
 
 - name: Import database file
   hosts: db
-  tasks:
-    - import_tasks: ../static-assignments/db.yml
+  import_playbook: ../static-assignments/db.yml
 
 # - hosts: lb
 #   name: Loadbalancers assignment
