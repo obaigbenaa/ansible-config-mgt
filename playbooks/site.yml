@@ -36,5 +36,4 @@
   when: load_balancer_is_required
 
 - name: artifactory assignment
-  hosts: artifactory
   import_playbook: ../static-assignments/artifactory.yml
