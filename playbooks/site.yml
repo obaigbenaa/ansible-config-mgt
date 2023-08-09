@@ -28,12 +28,12 @@
 #     - import_tasks: ../static-assignments/loadbalancers.yml
 #   when: load_balancer_is_required
 
-- name: import webserber files
-  import_playbook: ../static-assignments/uat-webservers.yml
+# - name: import webserber files
+#   import_playbook: ../static-assignments/uat-webservers.yml
 
-- name: import loadbalancer assignments
-  import_playbook: ../static-assignments/loadbalancers.yml
-  when: load_balancer_is_required
+# - name: import loadbalancer assignments
+#   import_playbook: ../static-assignments/loadbalancers.yml
+#   when: load_balancer_is_required
 
-- name: artifactory assignment
-  import_playbook: ../static-assignments/artifactory.yml
+# - name: artifactory assignment
+#   import_playbook: ../static-assignments/artifactory.yml
