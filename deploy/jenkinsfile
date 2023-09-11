@@ -34,7 +34,7 @@ pipeline {
       stage('Run Ansible playbook') {
         steps {
           echo "Inventory File Path: ${WORKSPACE}/inventory/${inventory}"
-           ansiblePlaybook become: true, colorized: true, credentialsId: 'jenkinsKey', disableHostKeyChecking: true, installation: 'ansible', inventory: 'inventory/${inventory}', playbook: 'playbooks/site.yml'
+           ansiblePlaybook become: true, colorized: true, credentialsId: 'Jenkins-key', disableHostKeyChecking: true, installation: 'ansible', inventory: 'inventory/${inventory}', playbook: 'playbooks/site.yml'
 
          }
       }
