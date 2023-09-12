@@ -49,7 +49,7 @@
 
     - name: Download the artifact
       get_url:
-        url: http://54.210.173.135:8082/artifactory/alex-devops/
+        url: http://54.210.173.135:8082/artifactory/alex-devops/php-todo
         dest: /home/ec2-user/
         url_username: admin
         url_password: cmVmdGtuOjAxOjE3MjYwOTA1NTA6QUVoYk50dmMyTGJYSTVzbURWWVlCRlJsMEF6
