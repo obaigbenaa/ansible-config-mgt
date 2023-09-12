@@ -9,7 +9,7 @@
 <Tooling-Web-Server-Private-IP-Address>
 
 [todo]
-<Todo-Web-Server-Private-IP-Address>
+172.31.62.9 ansible_ssh_user='ec2-user'
 
 [db:vars]
 ansible_user=ec2-user
