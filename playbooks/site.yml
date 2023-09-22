@@ -41,3 +41,7 @@
 - hosts: todo
 - name: Deploy the todo application
   ansible.builtin.import_playbook: ../static-assignments/deployment.yml
+
+- hosts: sonarqube
+- name: Sonarqube
+  import_playbook: ../static-assignments/sonar.yml
