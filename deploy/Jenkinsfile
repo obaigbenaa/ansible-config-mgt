@@ -6,7 +6,7 @@ pipeline {
     }
   
   environment {
-      ANSIBLE_CONFIG="${WORKSPACE}/deploy/ansible.cfg"
+      ANSIBLE_CONFIG="${WORKSPACE}/ansible.cfg"
     }
 
   stages{
