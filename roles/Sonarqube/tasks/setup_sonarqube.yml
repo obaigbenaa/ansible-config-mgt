@@ -66,6 +66,7 @@
     name: sonar
     state: started
     enabled: yes
+    become: yes
 
 - name: "Ensure SonarQube files permissions"
   file:
