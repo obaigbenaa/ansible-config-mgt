@@ -16,4 +16,4 @@ ansible_user=ec2-user
 ansible_python_interpreter=/usr/bin/python3
 
 [sonarqube]
-172.31.52.88 ansible_ssh_user='ubuntu'
+172.31.55.230 ansible_ssh_user='ubuntu'
