@@ -19,7 +19,7 @@
       dest: "{{ sonar_install_directory }}"
       owner: "{{ sonar_user }}"
       group: "{{ sonar_group }}"
-      copy: yes
+      copy: no
 
   - name: "Remove SonarQube archive"
     file:
