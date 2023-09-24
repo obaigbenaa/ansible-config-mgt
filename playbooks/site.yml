@@ -43,5 +43,5 @@
 #   ansible.builtin.import_playbook: ../static-assignments/deployment.yml
 
 - hosts: sonarqube
-- name: Sonarqube
+- name: sonarqube
   import_playbook: ../static-assignments/sonar.yml

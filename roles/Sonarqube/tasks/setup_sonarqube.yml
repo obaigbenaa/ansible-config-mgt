@@ -63,7 +63,7 @@
 
 - name: "Ensure SonarQube is running and set to start on boot."
   service:
-    name: sonar.service
+    name: sonar
     state: started
     enabled: yes
 
