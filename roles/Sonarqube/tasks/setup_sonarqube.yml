@@ -12,12 +12,6 @@
       dest: "/tmp/{{ __sonar_archive }}"
     retries: 5
     delay: 10
-  
-  - name: Install unzip
-  apt:
-    name: unzip
-    state: present
-  become: yes  # If you need elevated privileges
 
   - name: "Expand SonarQube binaries"
     unarchive:
