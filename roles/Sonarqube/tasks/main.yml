@@ -34,16 +34,16 @@
     value: 262144
     state: present
 
+- name: "Ensure JAVA is installed"
+  command: "java -version"
+  register: prereq_java
+  changed_when: false
+
 - name: Install Java 17 if not present
   apt:
     name: openjdk-17-jre  # Adjust the package name for your system
     state: present
   when: "'17' not in prereq_java.stdout"
-
-- name: "Ensure JAVA is installed"
-  command: "java -version"
-  register: prereq_java
-  changed_when: false
 
 - name: "Fail if JAVA is not available"
   fail:
