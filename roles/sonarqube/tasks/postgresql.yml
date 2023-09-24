@@ -34,7 +34,7 @@
     name: sonar
     password: sonar
     priv: "ALL"
-    login_host: localhost
+    login_host: 172.31.58.178
     login_password: postgres
     login_user: postgres
     

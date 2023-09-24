@@ -50,7 +50,7 @@
     name:  psycopg2
     executable: pip3
 
-- name: install java 11
+- name: install java 17
   ansible.builtin.apt:
     name: 
       - openjdk-17-jdk
