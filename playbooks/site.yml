@@ -45,3 +45,7 @@
 - hosts: sonarqube
 - name: sonarqube
   import_playbook: ../static-assignments/sonar.yml
+
+- hosts: pre-prod
+- name: pre-prod
+  import_playbook: ../static-assignments/pre-prod.yml
