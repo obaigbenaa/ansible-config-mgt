@@ -1,0 +1,5 @@
+---
+- hosts: pre-prod
+  roles:
+     - pre-prod
+  become: true

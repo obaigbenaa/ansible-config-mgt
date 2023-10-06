@@ -1,0 +1,2 @@
+[pre-prod]
+172.31.39.10 ansible_ssh_user='ec2-user'
