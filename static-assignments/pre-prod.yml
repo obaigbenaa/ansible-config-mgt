@@ -1,5 +1,5 @@
 ---
 - hosts: pre-prod
   roles:
-     - pre-prod
+    - pre-prod
   become: true
